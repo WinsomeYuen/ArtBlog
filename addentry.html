@@ -1,0 +1,53 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en">
+<head>
+<title>Add Entry</title>
+	<link rel="stylesheet" href="style.css">
+	<script type = "text/javascript">
+	<!--
+		function clear_form(){
+			var question = confirm("Are you sure you want to clear form?");
+			if (! question){
+				return false;
+			}
+		}
+		//-->
+	</script>
+</head>
+
+<body>
+	<form id = "myForm" action='addentry.php' method='post'>
+	<h1>Add an entry to Winsome Yuen's blog!</h1>
+	<p>Instructions:Enter a title and body for your blog entry.</p>
+	
+	<div>
+	<div class = "left"><label>Title: </label></div>
+	<div class = "right"><input type = "text" name="title" size="50" maxlength="50"/></div>
+	</div>
+	
+	<br/><br/>
+	
+	<div>
+	<div class = "left"><label>Body:</label></div>
+	<div class = "right"><textarea name="body" rows="10" cols="50"></textarea></div>
+	</div>
+	
+	<div><label>.</label></div>
+	
+	<div>
+	<div><div class="left"><label>.</label></div>
+	<div class = "right"><input type ="submit" id = "submit" value="Add Entry"/>
+	<input type ="reset" id = "reset" value="Clear"/>
+	<a href="/wy301/blog/viewBlog.php" class="button">Back Home</a></div>
+	</div>
+	
+	</form>
+
+	<script type = "text/javascript">
+	// Set reset button to the event handler !-->
+	document.getElementById("reset").onclick = clear_form;
+	//-->
+	</script>
+</body>

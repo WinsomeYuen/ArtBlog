@@ -1,0 +1,111 @@
+/*General layout for all pages*/
+html,body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	background-image: url("images/abstract.jpg");
+	font-family:Tw Cen MT;
+}
+h1, label {
+    color: #b781ba;
+}
+p {
+    color: #b781ba;
+	font-size: 25px;
+}
+a {
+	color:#b781ba;
+	text-decoration: none;
+}
+ul {
+    list-style-type: none;
+	color:#b781ba;
+
+}
+li a {
+    display: block;
+    color: #b781ba;
+    padding: 8px 16px;	
+}
+
+textarea {
+  vertical-align: top;
+}
+
+
+/*Layout for specific parts*/
+
+/*Two collumn layout*/
+.entries { 
+	position:absolute;
+	right:20%; width:80%;
+	padding-bottom:100px;
+}
+
+.navbar { 
+	position:absolute;
+	width:20%;
+	right:0px;
+	padding-bottom:100px;
+}
+
+.feed{
+	color: #b781ba;
+	margin-left: 20px;
+}
+
+/*Layout for menu*/
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: white;
+}
+
+/*Layout for static date*/
+.demo{
+	margin: 10px;
+	font-size:12px;
+}
+
+/*Layout for buttons*/
+.button, #reset, #submit, #exit{
+    background-color: #caa2cc;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	font-family:Tw Cen MT;
+}
+
+/*Layout to allign buttons and textboxes*/
+.left {
+    width: 30%;
+    float: left;
+    text-align: right;
+	position: inline-block;
+}
+.right {
+    width: 65%;
+    margin-left: 10px;
+    float:left;
+	position: inline-block;
+
+}
+
+
+/*Layout for login form*/
+.inputtext {
+    border: none;
+    border-bottom: 2px solid  #caa2cc;
+}
+
+/*Layout for exit page*/
+.exit {
+	margin: 0 auto;
+	text-align: center; 
+}
+
+.exit h2{
+	color: white;
+}
